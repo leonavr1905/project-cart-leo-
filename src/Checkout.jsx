@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { useStore } from '../context/StoreContext';
+import { useStore } from './StoreContext';
 
 const Checkout = () => {
   const { state, dispatch } = useStore();

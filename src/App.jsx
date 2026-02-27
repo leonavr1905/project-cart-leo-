@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
-import { useStore } from './context/StoreContext';
-import Navbar from './components/NavBar';
-import Login from './pages/login';
+import { useStore } from './StoreContext';
+import Navbar from './Navbar';
+import Login from './login';
 import Products from './pages/Products';
-import Checkout from './pages/Checkout';
+import Checkout from './Checkout';
 import Summary from './pages/Summary';
 
 // Komponen Pembatas Akses (Protected Route)

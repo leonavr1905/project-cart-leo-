@@ -1,5 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom';
-import { useStore } from '../context/StoreContext';
+import { useStore } from './StoreContext';
 
 const Navbar = () => {
   const { state, dispatch } = useStore();
@@ -7,7 +7,7 @@ const Navbar = () => {
 
   const handleLogout = () => {
     dispatch({ type: 'LOGOUT' });
-    navigate('/login');
+    navigate('/Login');
   };
 
   return (
